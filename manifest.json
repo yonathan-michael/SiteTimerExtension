@@ -2,5 +2,12 @@
 	"name": "Site Timer Extension",
 	"description": "Battling impulsive internet behavior!",
 	"version": "1.0",
-	"manifest_version": 3
+	"manifest_version": 3,
+	"permissions": ["tabs"],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"service_worker": "background.js"
+	}
 }
